@@ -27,10 +27,10 @@ ylabel('x_2')
 
 % % for algorithm part of paper
 % hold on, plot(x(89,1),x(89,2),'>','Color','r')
-% viscircles([x(89,1) x(89,2)],control_space,'Color','r');
+% viscircles([x(89,1) x(89,2)],co,'Color','r');
 % text(x(89,1)-0.2,x(89,2)-0.15,'2');
 % plot(x(224,1),x(224,2),'>','Color','r')
-% viscircles([x(224,1) x(224,2)],control_space,'Color','r');
+% viscircles([x(224,1) x(224,2)],co,'Color','r');
 % text(x(224,1)+0.1,x(224,2)-0.15,'3');
 
 hold on, plot(x1t,x2t,'x')
@@ -42,7 +42,7 @@ for i = 1:num_obs
      viscircles([r1(i) r2(i)], bo,'LineStyle','--');
     hold on, plot(r1(i), r2(i), '.','Color','k');
 end
-viscircles([x0(1) x0(2)],control_space,'Color','r');
+viscircles([x0(1) x0(2)],co,'Color','r');
 
 % text(r1(1)-0.23,r2(1)+0.15,'O_1');
 % text(r1(2)-0.23,r2(2)+0.15,'O_2');
@@ -67,7 +67,7 @@ viscircles([x0(1) x0(2)],control_space,'Color','r');
 %     end
 %     addpoints(h, x(k,1), x(k,2));
 % %     head = plot(x(k,1), x(k,2));
-% %     viscircles([x1(k) x2(k)],control_space,'Color','r');
+% %     viscircles([x1(k) x2(k)],co,'Color','r');
 %     drawnow
 % %     hold on
 % %     plotLyapunov;
@@ -151,4 +151,4 @@ viscircles([x0(1) x0(2)],control_space,'Color','r');
 % text(0.7,-0.3,'r')
 
 % V plot
-plotLyapunov2;
+% plotLyapunov2;

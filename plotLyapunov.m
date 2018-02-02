@@ -21,8 +21,8 @@ axis_y = 2;
 [N,M] = size(a);
 for i=1:N,
     for j=1:M,
-        v(i,j) = LyapunovFunction([a(i,j),b(i,j)],r1,r2,num_obs,control_space,doutside,voutside,x1t,x2t);
-        [d, p] = dist_circle([a(i,j),b(i,j)],r1,r2,num_obs,bo,control_space);
+        v(i,j) = LyapunovFunction([a(i,j),b(i,j)],r1,r2,num_obs,co,doutside,voutside,x1t,x2t);
+        [d, p] = dist_circle([a(i,j),b(i,j)],r1,r2,num_obs,bo,co);
         % for computing vector fields
 %         for k=1:length(p)
 %         if(~d(k))

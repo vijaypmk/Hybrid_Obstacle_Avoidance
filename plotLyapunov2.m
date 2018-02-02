@@ -20,7 +20,7 @@ axis_y = 2;
 %[a,b] = meshgrid(-1:mStep:axis_x,(axis_y-2):mStep:(axis_y+2));
 %[N,M] = size(a);
 for i=1:length(x(:,1))
-        v(i) = LyapunovFunction3([x(i,1),x(i,2)],r1,r2,num_obs,control_space,doutside,voutside,x1t,x2t);
+        v(i) = LyapunovFunction3([x(i,1),x(i,2)],r1,r2,num_obs,co,doutside,voutside,x1t,x2t);
 end
 
 figure(2)
